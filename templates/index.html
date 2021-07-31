@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        button {
+            background-color: rgb(24, 119, 242);
+            border-radius: 6px;
+            border: none;
+            color: white;
+            padding: 0.5rem 0.75rem;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        textarea {
+            font-size: .8rem;
+            letter-spacing: 1px;
+            padding: 10px;
+            max-width: 100%;
+            line-height: 1.5;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 1px 1px 1px #999;
+            resize:none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container">
+            <h1>Tóm tắt văn bản</h1>
+            <form action={% url 'index' %} method='post'>
+                {% csrf_token %}
+                <label class="io-label" for="input">Input</label>
+                <textarea id="input" name="input" cols="150" rows="15">{{ input }}</textarea>
+                <br/>
+                <button type="submit">Tóm tắt</button>
+            </form>
+
+            <div style="margin-top: 3rem">
+                <label class="io-label" for="output">Output</label>
+                <textarea id="output" cols="150" rows="15" readonly>{{ output }}</textarea>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+venv/lib/python3.9/site-packages/caffe2/python/caffe2_pybind11_state.cpython-39-darwin.so filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.9/site-packages/numpy/.dylibs/libopenblas.0.dylib filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.9/site-packages/scipy/.dylibs/libopenblas.0.dylib filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.9/site-packages/torch/lib/libcaffe2_detectron_ops.dylib filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.9/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.9/site-packages/torch/lib/libtorch_cpu.dylib filter=lfs diff=lfs merge=lfs -text
